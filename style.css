@@ -1,0 +1,409 @@
+/* Variáveis de cor para tema escuro */
+:root {
+    --cor-de-fundo: #1a1a1a;
+    --cor-de-fundo-menu: #2a2a2a;
+    --cor-do-link: #e6e6e6;
+    --cor-titulo: #f2f2f2;
+    --cor-subtitulo: #b3b3b3;
+    --cor-borda: #3a3a3a;
+    --cor-principal: #007BFF;
+}
+
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    color: var(--cor-subtitulo);
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-do-link);
+}
+
+/* ------------------------------ Menu ------------------------------- */
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--cor-de-fundo-menu);
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+.cabecalho__logo {
+    border-radius: 50%;
+    width: 100px;
+    
+}
+
+.cabecalho__titulo {
+    font-size: 1.4rem;
+    color: var(--cor-titulo);
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.titulo-destaque {
+    color: var(--cor-principal); /* Cor azul aplicada somente ao nome */
+}
+
+.navegacao__lista {
+    display: none;
+}
+
+.navegacao__elemento a {
+    font-size: 0.9rem;
+    color: var(--cor-do-link);
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+
+.navegacao__elemento a:hover {
+    color: #007BFF; /* Azul, ou escolha outro tom de azul */
+}
+
+/* ------------------------------ Seção Apresentação ------------------------------ */
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.apresentacao__foto {
+    max-width: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #007BFF;
+}
+
+.apresentacao__titulo {
+    font-size: 1.8rem;
+    color: var(--cor-titulo);
+}
+
+.apresentacao__subtitulo {
+    font-size: 1rem;
+    color: var(--cor-subtitulo);
+    margin: 0.5rem 0 1rem;
+}
+
+.redes {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.redes__elemento a {
+    display: flex;
+    align-items: center;
+    color: var(--cor-do-link);
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.redes__elemento img {
+    margin-left: 0.5rem;
+    width: 20px;
+}
+
+.redes__elemento a:hover {
+    color: #007BFF;
+}
+
+/* ------------------------------ Seção Sobre mim ------------------------------ */
+.sobre-mim {
+    padding: 2rem;
+    text-align: center;
+}
+
+.sobre-mim__titulo {
+    font-size: 1.6rem;
+    color: var(--cor-titulo);
+}
+
+.sobre-mim__texto {
+    font-size: 1rem;
+    color: var(--cor-subtitulo);
+    margin: 0.5rem 0;
+}
+
+.sobre-mim__assinatura {
+    max-width: 150px;
+    margin-top: 1rem;
+}
+
+/* ------------------------------ Seção de Habilidades ------------------------------ */
+.habilidades {
+    padding: 2rem;
+    text-align: center;
+}
+
+.habilidades__titulo {
+    font-size: 1.6rem;
+    color: var(--cor-titulo);
+}
+
+.habilidades__lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.habilidades__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+
+.habilidades__icone {
+    max-width: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.habilidades__nome {
+    font-size: 0.9rem;
+    color: var(--cor-titulo);
+}
+
+/* ------------------------------ Seção de Hobbies ------------------------------ */
+.hobbies {
+    padding: 2rem;
+    text-align: center;
+}
+
+.hobbies__titulo {
+    font-size: 1.6rem;
+    color: var(--cor-titulo);
+}
+
+.hobbies__lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.hobbies__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+
+.hobbies__icone {
+    max-width: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.hobbies__nome {
+    font-size: 0.9rem;
+    color: var(--cor-titulo);
+}
+
+/* ------------------------------ Seção de Formação ------------------------------ */
+.formacao {
+    padding: 2rem;
+    text-align: center;
+}
+
+.formacao__titulo {
+    font-size: 1.6rem;
+    color: var(--cor-titulo);
+}
+
+.formacao__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.formacao__elemento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; /* Espaçamento entre o ícone e o texto */
+}
+
+.formacao__icone {
+    max-width: 150px;
+}
+
+.formacao__nome {
+    font-size: 1.1rem;
+    color: var(--cor-titulo);
+}
+
+
+.formacao__detalhe {
+    font-size: 0.9rem;
+    color: var(--cor-subtitulo);
+}
+
+/* ------------------------------ Seção de Projetos ------------------------------ */
+.projetos {
+    padding: 2rem;
+    text-align: center;
+}
+
+.projetos__titulo {
+    font-size: 1.6rem;
+    color: var(--cor-titulo);
+}
+
+.projetos__conteiner {
+    max-width: 500px;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+}
+
+.projetos__nome {
+    font-size: 1.2rem;
+    color: var(--cor-titulo);
+}
+
+.titulo-destaque {
+    color: var(--cor-principal); /* Cor azul aplicada somente ao nome */
+}
+
+.projetos__descricao {
+    font-size: 0.9rem;
+    color: var(--cor-subtitulo);
+    margin-top: 0.5rem;
+}
+
+/* ------------------------------ Seção de Contato ------------------------------ */
+.contato {
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--cor-de-fundo-menu);
+    border-top: 1px solid var(--cor-borda);
+}
+
+.contato__titulo {
+    font-size: 1.8rem;
+    color: var(--cor-titulo);
+    margin-bottom: 1rem;
+}
+
+.contato__conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 600px;
+    width: 100%;
+}
+
+.contato__info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: var(--cor-subtitulo);
+}
+
+.contato__info img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Responsividade para a seção de contato */
+@media (min-width: 768px) {
+    .contato__conteudo {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .contato__info {
+        font-size: 1.1rem;
+    }
+}
+
+/* ------------------------------ Responsividade ------------------------------ */
+
+/* Tablets e telas maiores */
+@media (min-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .cabecalho__logo {
+        max-width: 100px;
+    }
+
+    .cabecalho__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacao__lista {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1rem;
+    }
+
+    .apresentacao__titulo {
+        font-size: 2rem;
+    }
+
+    .apresentacao__subtitulo {
+        font-size: 1.1rem;
+    }
+
+    .redes {
+        gap: 1.5rem;
+    }
+}
+
+/* Telas grandes */
+@media (min-width: 1024px) {
+    .cabecalho__titulo {
+        font-size: 2rem;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1.1rem;
+    }
+
+    .apresentacao__titulo {
+        font-size: 2.2rem;
+    }
+
+    .habilidades__elemento, .hobbies__elemento, .formacao__elemento {
+        width: 120px;
+    }
+
+    .formacao__nome {
+        font-size: 1.2rem;
+    }
+}
